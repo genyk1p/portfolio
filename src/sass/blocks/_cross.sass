@@ -1,0 +1,17 @@
+.cross
+    position: absolute
+    width: 30px
+    height: 30px
+    cursor: pointer
+    &::before, &::after
+        content: ""
+        position: absolute
+        top: 50%
+        left: 0
+        right: 0
+        height: 2px
+        background-color: black
+    &::before
+        transform: rotate(45deg)
+    &::after
+        transform: rotate(-45deg)

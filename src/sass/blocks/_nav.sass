@@ -1,0 +1,68 @@
+.nav
+    left: 0
+    top: 0
+    &__overlay
+        display: none
+        position: fixed
+        background: rgba(255, 255, 255, 0.75)
+        left: 0
+        top: 0
+        z-index: 50
+        width: 100vw
+        height: 100vh
+        &_show
+            display: block
+    &__menu-cross
+        right: 25px
+        top: 25px
+    &__menu-social
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 50px
+        a
+            display: inline-block
+            width: 20px
+            height: 20px
+            margin: 0 7px
+        img
+            transform: rotate(90deg)
+            width: 100%
+            height: 100%
+    &__menu
+        transition-duration: .5s
+        transform: translateX(-100%)
+        left: 0
+        top: 0
+        position: fixed
+        z-index: 60
+        width: 345px
+        height: 100vh
+        background: $main_color
+        list-style-type: none
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-left: 80px
+        &_activ
+            transform: translateX(0)
+        li
+            padding-bottom: 15px
+    &__menu-link
+        text-align: center
+        font-weight: 700
+        font-size: 24px
+        color: #FFFFFF
+        text-decoration: none
+        position: relative
+        &:before
+            top: 11px
+            left: -30px
+            display: block
+            position: absolute
+            content: ""
+            width: 11px
+            height: 11px
+            background: url("../icons/circle.svg") center center / cover no-repeat
+            margin-right: 20px
+                

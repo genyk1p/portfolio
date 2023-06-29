@@ -1,0 +1,55 @@
+.benefit
+    min-height: 560px
+    padding-top: 10px
+    padding-bottom: 110px
+    @include block_head
+    &__grid-container
+        display: grid
+        width: 968px
+        margin: 0 auto
+        grid-template-columns: repeat(2, 1fr)
+        column-gap: 135px
+        ul
+            list-style-type: none
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                width: 1px
+                height: 100%
+                background: #000
+                top: -15px
+            li
+                padding-left: 43px
+                margin-bottom: 45px
+    &__grid-elem-top
+        display: flex
+    &__grid-elem-top-image-cercle
+        margin-right: 25px
+        position: relative
+        &:after
+            content: ""
+            height: 1px
+            width: 42px
+            background: #000
+            position: absolute
+            left: -42px
+            top: 18px
+    &__grid-elem-title
+        position: relative
+        margin-left: 50px
+        &::before
+            content: ""
+            position: absolute
+            left: -57px
+            top: 8px
+            width: 15px
+            height: 15px
+            border-radius: 100%
+            background: $main_color
+    &__grid-elem-body
+        text-align: justify
+    &__grid-elem-top-text
+            flex-basis: 90%
+    &__grid-elem-body
+            hyphens: auto

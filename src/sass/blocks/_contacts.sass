@@ -1,0 +1,86 @@
+.contacts
+    padding-top: 10px
+    padding-bottom: 90px
+    @include block_head
+    &__title
+        display: inline-block
+    &__sub-title
+        text-align: start
+    &__divider, &__info-top-text
+        margin: 0 0 20px 0
+    &__main-grid-container
+        width: 1050px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 400px 585px
+        justify-content: space-between
+    &__img
+        min-height: 600px
+        background: url('../img/main_photo.jpg') center center / cover no-repeat
+    &__social-icons
+        display: flex
+        margin-bottom: 20px
+        a
+            width: 30px
+            height: 30px
+            display: block
+            margin-right: 25px
+            img
+                width: 100%
+                height: 100%
+    form
+        margin-top: 33px
+        display: grid
+        grid-template-columns: repeat(2, 280px)
+        grid-template-rows: 45px 190px 45px
+        column-gap: 25px
+        row-gap: 30px
+        align-content: space-between
+        justify-content: space-between
+    &__input-name, &__input-email
+        width: 100%
+        height: 100%
+        border: 1px #000 solid
+        padding: 20px
+    &__name-wrapper
+        position: relative
+        grid-column: 1
+        grid-row: 1
+    &__email-wrapper
+        position: relative
+        grid-column: 2
+        grid-row: 1
+    &__text-wrapper
+        position: relative
+        grid-column: 1 / 3
+        grid-row: 2
+        textarea
+            border: 1px #000 solid
+            height: 100%
+            resize: none
+            width: 100%
+            padding: 20px
+    &__lable
+        padding: 0 8px
+        margin: 0
+        position: absolute
+        left: 20px
+        top: -9px
+        background: white
+    &__button
+        border: none
+    &__bottom-wrapper
+        grid-column: 1/3
+        grid-row: 3
+        display: flex
+        align-self: center
+    &__policy
+        align-items: center
+        display: flex
+    &__policy_checkbox
+        margin-left: 35px
+        margin-right: 10px
+@supports (background-image: -webkit-image-set(url("image.webp") 1x))
+    .contacts
+        &__img
+            background: url("../img/main_photo.webp") center center / cover no-repeat 
