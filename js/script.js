@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         showModal(modal, mesage);
         modalThanksTimeout = setTimeout(()=>{
             modalHide(modal);
-            }, 555000)
+            }, 7000)
     }
 	// Закрываем модальное окно при нажатии крестика и обнуляем таймер закрытия
 	// Close the modal window when the cross is clicked and reset the close timer
